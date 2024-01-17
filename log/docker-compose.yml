@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nestjs-logs:
+    container_name: nestjs-logs
+    build:
+      context: "./nestjs-logs"
+      dockerfile: Dockerfile
+    #command: npm run start:dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nestjs-logs:/usr/src/app 
