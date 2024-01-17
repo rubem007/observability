@@ -1,9 +1,8 @@
 import { Module } from '@nestjs/common';
 import { CustomLogService } from './custom-log.service';
-import { CustomLogController } from './custom-log.controller';
 
 @Module({
-  controllers: [CustomLogController],
+  controllers: [],
   providers: [CustomLogService],
   exports: [CustomLogService],
 })

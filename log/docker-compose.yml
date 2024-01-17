@@ -10,4 +10,36 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./nestjs-logs:/usr/src/app 
+      - ./nestjs-logs:/usr/src/app
+      - ./../.docker/nestjs-logs/logs:/usr/src/app/logs
+
+  loki:
+    image: grafana/loki:2.8.7
+    container_name: loki
+    ports:
+      - 3100:3100
+    command: 
+      - -config.file=/etc/loki/local-config.yaml
+      - -print-config-stderr=true #printa a configuracao inicial no console
+
+  promtail:
+    image: grafana/promtail:2.8.7
+    container_name: promtail
+    ports:
+      - 9080:9080
+    # command: 
+    #   - -config.file=/etc/promtail/config.yml
+    volumes:
+      - ./promtail/config.yml:/etc/promtail/config.yml
+      - ./../.docker/nestjs-logs/logs:/usr/src/app/logs
+      - ./tmp:/tmp
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3200:3000
+    depends_on:
+      - loki
+      - promtail
+      - nestjs-logs
