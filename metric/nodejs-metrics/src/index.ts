@@ -11,8 +11,8 @@ const register = new prometheus.Registry();
 
 // Create custom metrics
 const customCounter = new prometheus.Counter({
-  name: "total_http_requests",
-  help: "Custom counter for my application",
+  name: "app_total_http_requests",
+  help: "Total counter for / route",
 });
 
 // Add your custom metric to the registry
