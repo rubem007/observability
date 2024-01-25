@@ -1,51 +1,53 @@
-<h1>Nodejs e Prometheus - Projeto de Observabilidade</h1>
+<h1>Nodejs and Prometheus - Observability Project</h1>
 
-> Status do Projeto: Concluído :heavy_check_mark:
+<h6> Não fala inglês? <a href="https://github.com/rubem007/observability/blob/dev/metric/README-pt.md"> Clique aqui </a> para ver essa página em português. </h6>
 
-## Descrição do Projeto
+> Status do Projeto: Completed  :heavy_check_mark:
+
+## Project Description
 <p align="justify">
-Este projeto simples visa monitorar as métricas do nodejs, e da nossa aplicação, utilizando o Prometheus para coleta e visualização dessas métricas.
-Um contador personalizado (`app_total_http_requests`) é utilizado para rastrear o total de requisições à rota '/'.
+This simple project aims to monitor Node.js metrics and our application using Prometheus for metric collection and visualization.
+A custom counter (`app_total_http_requests`) is used to track the total requests to the '/' route.
 </p>
 
-## Pré-requisitos
+## Prerequisites
 :warning: [Docker](https://www.docker.com/products/docker-desktop/)
 
-## Como rodar a aplicação
- 1 - Clone o repositório: 
+## How to Run the Application
+ 1 - Clone the repository: 
  ```
  git clone https://github.com/rubem007/observability.git
  ```
- 2 - Navegue até o diretório /metric: 
+ 2 - Navigate to the /metric directory: 
  ```
  cd observability/metric
  ```
- 3 - Execute o seguinte comando para rodar os containers: 
+ 3 - Execute the following command to run the containers: 
  ```
  docker-compose up -d
  ```
- 4 - Verifique se os containers estão em execução: 
+ 4 - Verify that the containers are running: 
  ```
  docker-compose ps
  ```
 
-## Teste
- - Abra o navegador e insira a seguinte URL para verificar se a aplicação está expondo as métricas: 
+## Testing
+ - Open your browser and enter the following URL to check if the application is exposing metrics: 
  ```
  http://localhost:3000/metrics
  ```
- - Em seguida aceda a UI do prometheus inserindo a seguinte URL: 
+ - Then, access the Prometheus UI by entering the following URL: 
  ```
  http://localhost:9090
  ```
- - Na barra de pesquisa do prometheus, pesquise por qualquer métrica encontrada no **http://localhost:3000/metrics**  
- Ex: **app_total_http_requests**, que é incrementada cada vez que um usuário acessa http://localhost:3000/
+ - In the Prometheus search bar, search for any metric found in **http://localhost:3000/metrics**  
+  Example: **app_total_http_requests**, which increments each time a user accesses http://localhost:3000/
 
 
-## Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e propor melhorias para o projeto.
+## Contributions
+Contributions are welcome! Feel free to open issues and propose improvements to the project.
 
-## Licença
+## License
 The [MIT License]() (MIT)
 
-Copyright :copyright: 2024 - Projeto de Observabilidade
+Copyright :copyright: 2024 - Observability Project
