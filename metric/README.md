@@ -5,6 +5,7 @@
 ## Descrição do Projeto
 <p align="justify">
 Este projeto simples visa monitorar as métricas do nodejs, e da nossa aplicação, utilizando o Prometheus para coleta e visualização dessas métricas.
+Um contador personalizado (`app_total_http_requests`) é utilizado para rastrear o total de requisições à rota '/'.
 </p>
 
 ## Pré-requisitos
