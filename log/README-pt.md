@@ -1,4 +1,4 @@
-<h1>Nestjs e Loki - Projeto de Observabilidade</h1>
+<h1>Nestjs e Loki - Projeto de Log</h1>
 
 <h6> Don't speak portuguese? <a href="https://github.com/rubem007/observability/blob/main/log/README.md"> Click here </a> to view this page in English. </h6>
 
@@ -7,7 +7,6 @@
 ## Descrição do Projeto
 <p align="justify">
 Este é um projeto de log desenvolvido utilizando o NestJS para a exposição dos logs, Grafana Loki para armazenamento e consulta de logs, Promtail para coleta de logs e Grafana para visualização dos dados.
-
 </p>
 
 ## Pré-requisitos
@@ -39,12 +38,13 @@ Este é um projeto de log desenvolvido utilizando o NestJS para a exposição do
  ```
  
  - Faça o login com as seguintes credenciais:
- ⋅⋅* Nome de Usuário: `admin`
- ⋅⋅* Palavra-passe: `admin`
- Ser-lhe-á pedido para criar uma nova palavra-passe, mas pode ignorar este passo
+   - Nome de Usuário: `admin`
+   - Palavra-passe: `admin`
+  
+   Ser-lhe-á pedido para criar uma nova palavra-passe, mas pode ignorar este passo
 
  - Na página inicial, clique no painel **Add your first data source**:
- ![alt text](https://github.com/rubem007/observability/raw/dev/images/grafana-homepage.png "Grafana Homepage")
+ ![alt text](https://github.com/rubem007/observability/raw/dev/log/images/grafana-homepage.png "Grafana Homepage")
 
  - Caso não tenha encontrado o painel **Add your first data source**, insira a seguinte URL:
  ```
@@ -60,19 +60,19 @@ Este é um projeto de log desenvolvido utilizando o NestJS para a exposição do
  - Clique no botão **Save & test**, e você verá a mensagem `Data source conectado com êxito`
 
  - Clique na opção **Explore data** e ser-lhe-á aberto o seguinte painel:
- ![alt text](https://github.com/rubem007/observability/raw/dev/images/grafana-loki-panel.png "Grafana Loki Panel")
+ ![alt text](https://github.com/rubem007/observability/raw/dev/log/images/grafana-loki-panel.png "Grafana Loki Panel")
 
- #### Visualizando os logs da aplicação
- - Em **Label filters**:
- ⋅⋅⋅ Escolha a opção **job**, no campo **Select label** 
- ⋅⋅⋅ Escolha a opção **nestjs-logs**, no campo **Select value** 
+ - Visualizando os logs da aplicação
+   - Em **Label filters**:
+     - Escolha a opção **job**, no campo **Select label** 
+     - Escolha a opção **nestjs-logs**, no campo **Select value** 
 
  - Clique no botão **Run query** e você verá o resultado semelhante a esta imagem:
-  ![alt text](https://github.com/rubem007/observability/raw/dev/images/grafana-log-visualization.png "Grafana Log Visualization")
+  ![alt text](https://github.com/rubem007/observability/raw/dev/log/images/grafana-log-visualization.png "Grafana Log Visualization")
 
 ## Documentação
- [Site oficial do grafana](https://www.google.com){:target="_blank"}
- [Observability labs](https://observability.courselabs.co/){:target="_blank"}
+  <a href="https://www.grafana.com/">Site oficial do grafana</a><br>
+  <a href="https://observability.courselabs.co/">Observability labs</a>
 
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e propor melhorias para o projeto.
