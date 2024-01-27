@@ -44,7 +44,7 @@ Este é um projeto de log desenvolvido utilizando o NestJS para a exposição do
    Ser-lhe-á pedido para criar uma nova palavra-passe, mas pode ignorar este passo
 
  - Na página inicial, clique no painel **Add your first data source**:
- ![alt text](https://github.com/rubem007/observability/raw/dev/log/images/grafana-homepage.png "Grafana Homepage")
+ ![alt text](https://github.com/rubem007/observability/blob/dev/log/images/grafana-homepage.png "Grafana Homepage")
 
  - Caso não tenha encontrado o painel **Add your first data source**, insira a seguinte URL:
  ```
