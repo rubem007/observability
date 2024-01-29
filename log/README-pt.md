@@ -71,8 +71,8 @@ Este é um projeto de log desenvolvido utilizando o NestJS para a exposição do
   ![alt text](https://github.com/rubem007/observability/raw/dev/log/images/grafana-log-visualization.png "Grafana Log Visualization")
 
 ## Documentação
-  <a href="https://www.grafana.com/">Site oficial do grafana</a><br>
-  <a href="https://observability.courselabs.co/">Observability labs</a>
+  <a href="https://www.grafana.com/" target="_blank">Site oficial do grafana</a><br>
+  <a href="https://observability.courselabs.co/" target="_blank">Observability labs</a>
 
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e propor melhorias para o projeto.
