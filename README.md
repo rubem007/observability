@@ -4,11 +4,11 @@
 Welcome to the Observability and Application Monitoring project! <br> 
 This repository is dedicated to providing a comprehensive solution for proactive monitoring and detailed observation of your application's performance. The project is divided into three main subprojects:
 </p>
- - <a href="https://github.com/rubem007/observability/tree/main/metric" target="_blank">Metricas</a><br>
+ - <a href="https://github.com/rubem007/observability/tree/main/metric" target="_blank">Metrics</a><br>
  - <a href="https://github.com/rubem007/observability/tree/main/log" target="_blank">Logs</a><br>
  - Trace
 
-## Status dos Projetos
+## Project Status
 
 Metric | Logs | Trace
 --- | --- | ---
