@@ -6,11 +6,11 @@ Este repositório é dedicado a oferecer uma solução abrangente para o monitor
 </p>
  - <a href="https://github.com/rubem007/observability/tree/main/metric" target="_blank">Metricas</a><br>
  - <a href="https://github.com/rubem007/observability/tree/main/log" target="_blank">Logs</a><br>
- - Trace
+ - Rastreamento
 
 ## Status dos Projetos
 
-Metrica | Logs | Trace
+Metrica | Logs | Rastreamento
 --- | --- | ---
 Concluído | Concluído | Em Desenvolvimento
 
