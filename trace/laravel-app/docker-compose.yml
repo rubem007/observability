@@ -25,6 +25,13 @@ services:
         networks:
             - laravel
 
+    zipkin:
+        image: openzipkin/zipkin:3.0
+        ports:
+          - 9411:9411
+        networks:
+            - laravel
+
 networks:
     laravel:
         driver: bridge
