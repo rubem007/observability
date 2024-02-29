@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "npx ts-node --require ./tracing src/index.ts",
     "build": "tsc",
     "serve": "node dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "dev": "nodemon --require ./tracing src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,6 +22,16 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@opentelemetry/api": "^1.7.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.41.1",
+    "@opentelemetry/exporter-zipkin": "^1.22.0",
+    "@opentelemetry/instrumentation-express": "^0.35.0",
+    "@opentelemetry/instrumentation-http": "^0.49.0",
+    "@opentelemetry/resources": "^1.22.0",
+    "@opentelemetry/sdk-metrics": "^1.22.0",
+    "@opentelemetry/sdk-node": "^0.48.0",
+    "@opentelemetry/sdk-trace-node": "^1.22.0",
+    "@opentelemetry/semantic-conventions": "^1.22.0",
     "express": "^4.18.2"
   }
 }
