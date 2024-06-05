@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-trace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npx ts-node --require ./tracing src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "dev": "nodemon --require ./tracing src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.21",
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.7.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.41.1",
+    "@opentelemetry/exporter-zipkin": "^1.22.0",
+    "@opentelemetry/instrumentation-express": "^0.35.0",
+    "@opentelemetry/instrumentation-http": "^0.49.0",
+    "@opentelemetry/resources": "^1.22.0",
+    "@opentelemetry/sdk-metrics": "^1.22.0",
+    "@opentelemetry/sdk-node": "^0.48.0",
+    "@opentelemetry/sdk-trace-node": "^1.22.0",
+    "@opentelemetry/semantic-conventions": "^1.22.0",
+    "express": "^4.18.2"
+  }
+}
