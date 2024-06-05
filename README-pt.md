@@ -1,5 +1,5 @@
 <h1> Projeto de Observabilidade </h1>
-
+<h6> Don't speak portuguese? <a href="https://github.com/rubem007/observability/blob/main/README.md"> Click here </a> to view this page in English. </h6>
 <p align="justify">
 Bem-vindo ao projeto de Observabilidade e Monitoramento de Aplicações! <br> 
 Este repositório é dedicado a oferecer uma solução abrangente para o monitoramento proativo e a observação detalhada do desempenho de suas aplicações. O projeto está dividido em três subprojetos principais:
